@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from 'react';
-import {createRoot} from 'react-dom/client';
 import {motion} from 'framer-motion';
 import {Heart,CalendarDays,MapPin,Menu,X,ChevronDown,Music2,ArrowUp} from 'lucide-react';
 import './styles.css';
@@ -22,4 +21,5 @@ return <div className="shell"><header><a className="brand" onClick={()=>jump('ho
 <section className="section rsvp"><small>॥ सादर आमंत्रण ॥</small><h2>आपकी उपस्थिति ही उपहार है</h2><div className="invite"><Heart/><p>इस शुभ अवसर पर<br/>आप सपरिवार आमंत्रित हैं।</p>✿　❀　✿</div><p>यह एक सजावटी आमंत्रण है। किसी प्रकार का ऑनलाइन पंजीकरण नहीं होगा।</p></section>
 <section className="closing"><div>✦　❀　✦</div><div className="diyas">🪔　🪔　🪔</div><small>सप्रेम आमंत्रण</small><h2>काजल कुमारी<br/><i>एवं</i><br/>सोनल सुमन</h2><div className="orn">✦　❀　✦</div><p>समस्त परिवार की ओर से<br/>सादर निमंत्रण।</p><b>२४ नवम्बर २०२६</b><small>॥ शुभ मंगलम ॥</small></section>
 </main><footer>काजल <b>♥</b> सोनल<br/><small>प्रेम, परंपरा और मंगल मिलन</small></footer>{top&&<button className="backtop" onClick={()=>scrollTo({top:0,behavior:'smooth'})}><ArrowUp/></button>}</div>}
-createRoot(document.getElementById('root')).render(<App/>);
+
+export default App;
